@@ -1,0 +1,10 @@
+{
+	"auth": {
+		"amplifyconsoled1502fda": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}
