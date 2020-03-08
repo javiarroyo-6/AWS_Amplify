@@ -2,17 +2,13 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
-import { withAuthenticator } from "aws-amplify-react-native";
+import AuthNavigator from "./src/navigation/AuthNavigation";
 
 Amplify.configure(awsconfig);
 
-const App = () => (
-  <View style={styles.container}>
-    <Text> Hello World !</Text>
-  </View>
-);
+const App = () => <AuthNavigator />;
 
-export default withAuthenticator(App, true);
+export default App;
 
 const styles = StyleSheet.create({
   container: {
